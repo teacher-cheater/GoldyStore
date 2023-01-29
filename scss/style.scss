@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:300italic,regular,500,600,700,800,900&display=swap");
+
+@import "null.scss";
+@import "header.scss";
+@import "main.scss";
+@import "block.scss";
+@import "dots-list.scss";
+@import "slider.scss";
+
+body {
+  line-height: 1;
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 1470px;
+  margin: 0 auto;
+}
+
+.main {
+  flex-grow: 1;
+}
