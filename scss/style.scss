@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Inter:300italic,regular,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Prata:regular&display=swap");
 
 @import "null.scss";
 @import "header.scss";
@@ -17,8 +18,9 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  max-width: 1470px;
+  max-width: 1330px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .main {

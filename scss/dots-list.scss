@@ -1,0 +1,16 @@
+.selected {
+  position: relative;
+}
+
+.selected::after {
+  content: "";
+  position: absolute;
+}
+
+.selected::after {
+  background: url("../img/other-icon/selected.svg") 0 0 / contain no-repeat;
+  top: 15px;
+  right: 1px;
+  width: 7px;
+  height: 14px;
+}
