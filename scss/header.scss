@@ -65,10 +65,10 @@
     &:not(:last-child)::after {
       content: "";
       width: 1px;
-      height: 10px;
+      height: 11px;
       background: $mainColor;
       position: absolute;
-      top: 4px;
+      top: 2px;
       right: -10px;
     }
     a {
@@ -87,6 +87,12 @@
   // .header__bottom
 
   &__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    background: $backgroundColor;
+    padding: 25px 50px;
+    align-items: center;
   }
 
   // .header__navigation
@@ -97,73 +103,42 @@
   // .header__search
 
   &__search {
+    position: relative;
+    &::before {
+      content: "";
+      background: url("../img/icons/search.svg") 0 0 / contain no-repeat;
+      width: 12px;
+      height: 12px;
+      top: 7px;
+      left: 0px;
+      position: absolute;
+    }
   }
 
   // .header__input
 
   &__input {
-  }
-}
-.select {
-  // .select__form-group
+    padding: 5px;
+    padding-left: 20px;
+    outline: none;
 
-  &__form-group {
-  }
-}
-.dropdown-items {
-  // .dropdown-items__content
-
-  &__content {
     font-family: "Inter";
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
-  }
-
-  // .dropdown-items__btn
-
-  &__btn {
-    color: $mainColor;
-    margin-right: 60px;
-    background: transparent;
-    padding: 0 16px;
-    position: relative;
-    width: 162px;
-    &::before {
-      content: "";
-      background: url("../img/icons/geo.svg") 0 0 / contain no-repeat;
-      width: 12px;
-      height: 12px;
-      top: 1px;
-      left: 2px;
-      position: absolute;
-    }
-    &::after {
-      content: "";
-      background: url("../img/other-icon/arrow-down.svg") 0 0 / contain
-        no-repeat;
-      width: 12px;
-      height: 12px;
-      top: 5px;
-      right: -8px;
-      position: absolute;
-    }
-  }
-
-  // .dropdown-items__list
-
-  &__list {
-  }
-
-  // .dropdown-items__item
-
-  &__item {
+    color: $mainColorLite;
   }
 }
-.dropdown {
+
+.enter a,
+.reg a {
+  transition: all 0.3s ease-in 0s;
+
+  &:hover {
+    color: $colorLate;
+  }
 }
-.selected {
-}
+
 .top {
   // .top__phone
   &__phone {
@@ -176,8 +151,15 @@
       width: 12px;
       height: 12px;
       top: 1px;
-      left: 2px;
+      left: -5px;
       position: absolute;
+    }
+    &:hover {
+      cursor: pointer;
+      transition: all 0.4s ease-in 0s;
+      &::before {
+        background: url("../img/icons/phone-late.svg") 0 0 / contain no-repeat;
+      }
     }
   }
 }
@@ -188,6 +170,10 @@
   }
 }
 .nav {
+  & ul {
+    display: flex;
+    gap: 60px;
+  }
   // .nav__list
 
   &__list {
@@ -195,6 +181,16 @@
 
   // .nav__link
 
-  &__link {
+  &__link a {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $mainColor;
+    transition: all 0.3s ease-in 0s;
+    &:hover {
+      color: $colorLate;
+    }
   }
 }

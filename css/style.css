@@ -84,10 +84,10 @@ html {
 .header__enter:not(:last-child)::after {
   content: "";
   width: 1px;
-  height: 10px;
+  height: 11px;
   background: #303030;
   position: absolute;
-  top: 4px;
+  top: 2px;
   right: -10px;
 }
 .header__enter a {
@@ -98,19 +98,117 @@ html {
   display: flex;
   gap: 28px;
 }
+.header__bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  background: #f8f8f8;
+  padding: 25px 50px;
+  align-items: center;
+}
+.header__search {
+  position: relative;
+}
+.header__search::before {
+  content: "";
+  background: url("../img/icons/search.svg") 0 0/contain no-repeat;
+  width: 12px;
+  height: 12px;
+  top: 7px;
+  left: 0px;
+  position: absolute;
+}
+.header__input {
+  padding: 5px;
+  padding-left: 20px;
+  outline: none;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #a2a2a2;
+}
+
+.enter a,
+.reg a {
+  transition: all 0.3s ease-in 0s;
+}
+.enter a:hover,
+.reg a:hover {
+  color: #909090;
+}
+
+.top__phone {
+  color: #303030;
+  padding-left: 18px;
+  position: relative;
+}
+.top__phone::before {
+  content: "";
+  background: url("../img/icons/phone.svg") 0 0/contain no-repeat;
+  width: 12px;
+  height: 12px;
+  top: 1px;
+  left: -5px;
+  position: absolute;
+}
+.top__phone:hover {
+  cursor: pointer;
+  transition: all 0.4s ease-in 0s;
+}
+.top__phone:hover::before {
+  background: url("../img/icons/phone-late.svg") 0 0/contain no-repeat;
+}
+
+.nav ul {
+  display: flex;
+  gap: 60px;
+}
+.nav__link a {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #303030;
+  transition: all 0.3s ease-in 0s;
+}
+.nav__link a:hover {
+  color: #909090;
+}
+
+.selected {
+  position: relative;
+}
+
+.selected::after {
+  content: "";
+  position: absolute;
+}
+
+.selected::after {
+  background: url("../img/other-icon/selected.svg") 0 0/contain no-repeat;
+  top: 15px;
+  right: 1px;
+  width: 7px;
+  height: 14px;
+}
+
 .dropdown-items__content {
   font-family: "Inter";
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
+  position: relative;
 }
 .dropdown-items__btn {
   color: #303030;
   margin-right: 60px;
   background: transparent;
+  padding: 5px;
   padding: 0 16px;
-  position: relative;
   width: 162px;
+  position: relative;
 }
 .dropdown-items__btn::before {
   content: "";
@@ -130,36 +228,48 @@ html {
   right: -8px;
   position: absolute;
 }
-.top__phone {
+.dropdown-items__btn:hover {
+  cursor: pointer;
+  transition: all 0.4s ease-in 0s;
+}
+.dropdown-items__btn:hover::before {
+  background: url("../img/icons/geo-late.svg") 0 0/contain no-repeat;
+}
+.dropdown-items__btn:focus {
+  outline: none;
+}
+.dropdown-items__list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  padding: 24px 28px;
+  background: #ffffff;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  min-width: 197px;
+  z-index: 5;
+}
+.dropdown-items__item {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
   color: #303030;
-  padding-left: 18px;
-  position: relative;
+  padding: 10px;
+  cursor: pointer;
 }
-.top__phone::before {
-  content: "";
-  background: url("../img/icons/phone.svg") 0 0/contain no-repeat;
-  width: 12px;
-  height: 12px;
-  top: 1px;
-  left: 2px;
-  position: absolute;
+.dropdown-items__item:hover {
+  background: #f8f8f8;
+  width: 100%;
 }
 
-.selected {
-  position: relative;
+.dropdown-items__list--visible {
+  display: block;
 }
 
-.selected::after {
-  content: "";
-  position: absolute;
-}
-
-.selected::after {
-  background: url("../img/other-icon/selected.svg") 0 0/contain no-repeat;
-  top: 15px;
-  right: 1px;
-  width: 7px;
-  height: 14px;
+.dropdown-items__btn--active {
+  outline: none;
 }
 
 body {
