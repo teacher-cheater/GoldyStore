@@ -30,7 +30,7 @@
                   </ul>
                 </div>
               </div>
-              <!--<a href="tel:+78007852535" class="top__phone">8 800 785-25-35</a>-->
+              <a href="tel:+78007852535" class="top__phone">8 800 785-25-35</a>
             </div>
             <!-- header-logo -->
             <div class="header__logo">
@@ -49,13 +49,20 @@
             <!-- icons -->
             <div class="header__icons icons">
               <div class="icons__main">
-                <a href="#"><img src="img/icons/like.svg" alt="likes" /></a>
+                <a href="#" class="icons__like"
+                  ><img src="img/icons/like.svg" alt="likes"
+                /></a>
+                <span class="icons__counter">23</span>
               </div>
               <div class="icons__main">
-                <a href="#"><img src="img/icons/chart.svg" alt="shart" /></a>
+                <a href="#" class="icons__shart"
+                  ><img src="img/icons/chart.svg" alt="shart"
+                /></a>
               </div>
               <div class="icons__main">
-                <a href="#"><img src="img/icons/bag.svg" alt="bag" /></a>
+                <a href="#" class="icons__bag"
+                  ><img src="img/icons/bag.svg" alt="bag"
+                /></a>
               </div>
             </div>
           </div>
@@ -68,6 +75,7 @@
                 <li class="nav__link"><a href="#"> Акции</a></li>
                 <li class="nav__link"><a href="#"> Бренды</a></li>
                 <li class="nav__link"><a href="#"> Магазины</a></li>
+                <li class="nav__link"><a href="#"> О нас</a></li>
                 <li class="nav__link"><a href="#"> Доставка и оплата</a></li>
                 <li class="nav__link"><a href="#"> Статьи</a></li>
               </ul>
@@ -85,7 +93,61 @@
       </header>
       <!-- main -->
       <main class="main">
-        <div class="main__container"></div>
+        <div class="main__container">
+          <!-- slider -->
+          <section class="slider">
+            <div class="slider__container">
+              <div class="slider__content my-slides fade">
+                <div class="slider__block-left">
+                  <h2 class="slider__title">суперскидка %</h2>
+                  <p class="slider__subtitle">на бриллианты</p>
+                  <a href="#" class="slider__button">Подробнее</a>
+                </div>
+                <div class="slider__block-right">
+                  <img
+                    class="fade__image"
+                    src="./img/main-slider/ring.jpg"
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+              <div class="slider__content my-slides fade">
+                <div class="slider__block-left">
+                  <h2 class="slider__title">суперскидка</h2>
+                  <p class="slider__subtitle">на бриллианты</p>
+                  <a href="#" class="slider__button">Подробнее</a>
+                </div>
+                <div class="slider__block-right">
+                  <img
+                    class="fade__image"
+                    src="./img/main-slider/ring.jpg"
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+              <div class="slider__content my-slides fade">
+                <div class="slider__block-left">
+                  <h2 class="slider__title">скидка</h2>
+                  <p class="slider__subtitle">на бриллианты</p>
+                  <a href="#" class="slider__button">Подробнее</a>
+                </div>
+                <div class="slider__block-right">
+                  <img
+                    class="fade__image"
+                    src="./img/main-slider/ring.jpg"
+                    style="width: 100%"
+                  />
+                </div>
+              </div>
+              <a class="slider__btn-prev" onclick="plusSlides(-1)"
+                ><img src="img/icons/btn-slide.svg" alt="prev" />
+              </a>
+              <a class="slider__btn-next" onclick="plusSlides(1)"
+                ><img src="img/icons/btn-slide.svg" alt="next" />
+              </a>
+            </div>
+          </section>
+        </div>
       </main>
       <footer class="footer"></footer>
     </div>

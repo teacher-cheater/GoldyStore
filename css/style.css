@@ -54,6 +54,7 @@ html {
   padding: 24px 0;
   gap: 10px;
   justify-content: space-between;
+  align-items: flex-end;
 }
 .header__data {
   display: flex;
@@ -118,10 +119,20 @@ html {
   left: 0px;
   position: absolute;
 }
+.header__search::after {
+  content: "";
+  width: 1px;
+  height: 76px;
+  top: -25px;
+  left: -24px;
+  position: absolute;
+  background: #f0f0f0;
+}
 .header__input {
   padding: 5px;
   padding-left: 20px;
   outline: none;
+  background: #f8f8f8;
   font-family: "Inter";
   font-weight: 400;
   font-size: 14px;
@@ -160,6 +171,35 @@ html {
   background: url("../img/icons/phone-late.svg") 0 0/contain no-repeat;
 }
 
+.icons {
+  position: relative;
+}
+.icons__main {
+  display: flex;
+  align-self: flex-end;
+}
+.icons__shart:hover, .icons__bag:hover {
+  background: #f8f8f8;
+}
+.icons__counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -7px;
+  left: 13px;
+  background: #e46942;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 100%;
+}
+
 .nav ul {
   display: flex;
   gap: 60px;
@@ -194,6 +234,81 @@ html {
   height: 14px;
 }
 
+.mySlides {
+  display: none;
+}
+
+.slider__container {
+  position: relative;
+}
+.slider__content {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+}
+.slider__block-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slider__title {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: #303030;
+  margin-bottom: 30px;
+}
+.slider__subtitle {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 100%;
+  color: #303030;
+  margin-bottom: 54px;
+  text-transform: uppercase;
+}
+.slider__button {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #303030;
+  padding: 20px 56px;
+  cursor: pointer;
+  max-width: 200px;
+  transition: all 0.3s ease-in 0s;
+}
+.slider__button:hover {
+  background: #505050;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.fade__image {
+  vertical-align: middle;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .dropdown-items__content {
   font-family: "Inter";
   font-weight: 400;

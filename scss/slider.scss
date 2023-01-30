@@ -1,36 +1,110 @@
-////----title-color-----
-//.title-color-1 {
-//  color: #ff5a50;
-//}
-//.title-color-2 {
-//  color: #2f93e1;
-//}
+.mySlides {
+  display: none;
+}
 
-////------style bg color-------
-//.icon-bg-color-1 {
-//  background: #2f93e1;
-//}
-//.icon-bg-color-2 {
-//  background: #ff5a50;
-//}
-//.icon-bg-color-3 {
-//  background: #ff5a50;
-//}
-//.icon-bg-color-4 {
-//  background: #ffa438;
-//}
-////-----style slider swiper-----
-//.swiper-pagination-bullet {
-//  border: 1px solid rgba(255, 255, 255, 0.5);
-//  padding: 2px;
-//  border-radius: 10px;
-//  cursor: pointer;
-//  transition: 1s;
-//  background: rgba(255, 255, 255, 0.5);
-//  &:not(:last-child) {
-//    margin-right: 4px;
-//  }
-//  &:hover {
-//    background: #fff;
-//  }
-//}
+.slider {
+  // .slider__container
+  &__container {
+    position: relative;
+  }
+
+  // .slider__content
+
+  &__content {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+  }
+
+  // .slider__block-left
+
+  &__block-left {
+    //padding: 90px 20px 70px 90px;
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+    justify-content: center;
+  }
+
+  // .slider__title
+
+  &__title {
+    font-family: "Prata";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: $mainColor;
+    margin-bottom: 30px;
+  }
+
+  // .slider__subtitle
+
+  &__subtitle {
+    font-family: "Prata";
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 100%;
+    color: $mainColor;
+    margin-bottom: 54px;
+    text-transform: uppercase;
+  }
+
+  // .slider__button
+  &__button {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: $standart;
+    background: $mainColor;
+    padding: 20px 56px;
+    cursor: pointer;
+    max-width: 200px;
+    transition: all 0.3s ease-in 0s;
+    &:hover {
+      background: $hoverBtn;
+    }
+  }
+
+  // .slider__block-right
+  &__block-right {
+  }
+
+  // .slider__btn-prev
+  &__btn-prev {
+  }
+
+  // .slider__btn-next
+
+  &__btn-next {
+  }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  // .fade__image
+  &__image {
+    vertical-align: middle;
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
