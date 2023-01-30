@@ -48,6 +48,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 24px;
 }
 .header__top {
   display: flex;
@@ -238,6 +239,9 @@ html {
   display: none;
 }
 
+.slider {
+  background: #f8f8f8;
+}
 .slider__container {
   position: relative;
 }
@@ -245,8 +249,10 @@ html {
   display: flex;
   padding: 30px;
   justify-content: space-between;
+  position: relative;
 }
 .slider__block-left {
+  padding-left: 86px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -285,6 +291,46 @@ html {
 .slider__button:hover {
   background: #505050;
 }
+.slider__btn-prev {
+  content: "";
+  position: absolute;
+  top: 42.5%;
+  left: 24px;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in 0s;
+  background: url("../img/icons/btn-next.svg") 0 0/contain no-repeat;
+  transform: rotate(180deg);
+  width: 54px;
+  height: 54px;
+}
+.slider__btn-prev:hover {
+  background: url("../img/icons/btn-next-hover.svg") 0 0/contain no-repeat;
+}
+.slider__btn-prev:active {
+  background: url("../img/icons/btn-next-active.svg") 0 0/contain no-repeat;
+}
+.slider__btn-next {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 24px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in 0s;
+  background: url("../img/icons/btn-next.svg") 0 0/contain no-repeat;
+  width: 54px;
+  height: 54px;
+}
+.slider__btn-next:hover {
+  background: url("../img/icons/btn-next-hover.svg") 0 0/contain no-repeat;
+}
+.slider__btn-next:active {
+  background: url("../img/icons/btn-next-active.svg") 0 0/contain no-repeat;
+}
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
