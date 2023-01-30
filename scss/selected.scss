@@ -41,6 +41,9 @@
       top: 5px;
       right: -8px;
       position: absolute;
+      @media (max-width: 1200px) {
+        width: 0;
+      }
     }
     &:hover {
       cursor: pointer;
@@ -52,6 +55,9 @@
     &:focus {
       outline: none;
       //background-color: $backgroundColor;
+    }
+    @media (max-width: 1200px) {
+      margin-right: 30px;
     }
   }
 
@@ -65,7 +71,7 @@
     background: $standart;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    min-width: 197px;
+    min-width: 220px;
     z-index: 5;
   }
 

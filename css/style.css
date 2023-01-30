@@ -50,15 +50,26 @@ html {
   gap: 30px;
   margin-bottom: 24px;
 }
+@media (max-width: 1200px) {
+  .header__container {
+    gap: 22px;
+  }
+}
 .header__top {
   display: flex;
   padding: 24px 0;
-  gap: 10px;
+  gap: 20px;
   justify-content: space-between;
   align-items: flex-end;
 }
 .header__data {
   display: flex;
+}
+@media (max-width: 1200px) {
+  .header__data {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 .header__logo {
   text-align: center;
@@ -80,6 +91,11 @@ html {
   line-height: 100%;
   color: #303030;
 }
+@media (max-width: 1200px) {
+  .header__block-registration ul {
+    flex-wrap: wrap;
+  }
+}
 .header__enter {
   position: relative;
 }
@@ -91,6 +107,11 @@ html {
   position: absolute;
   top: 2px;
   right: -10px;
+}
+@media (max-width: 1200px) {
+  .header__enter:not(:last-child)::after {
+    height: 0;
+  }
 }
 .header__enter a {
   color: #303030;
@@ -164,8 +185,13 @@ html {
 
 .top__phone {
   color: #303030;
-  padding-left: 18px;
+  padding-left: 30px;
   position: relative;
+}
+@media (max-width: 1200px) {
+  .top__phone {
+    display: none;
+  }
 }
 .top__phone::before {
   content: "";
@@ -173,7 +199,7 @@ html {
   width: 12px;
   height: 12px;
   top: 1px;
-  left: -5px;
+  left: 3px;
   position: absolute;
 }
 .top__phone:hover {
@@ -182,6 +208,14 @@ html {
 }
 .top__phone:hover::before {
   background: url("../img/icons/phone-late.svg") 0 0/contain no-repeat;
+}
+.top__phone-mobile {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .top__phone-mobile {
+    display: flex;
+  }
 }
 
 .icons {
@@ -416,6 +450,11 @@ html {
   right: -8px;
   position: absolute;
 }
+@media (max-width: 1200px) {
+  .dropdown-items__btn::after {
+    width: 0;
+  }
+}
 .dropdown-items__btn:hover {
   cursor: pointer;
   transition: all 0.4s ease-in 0s;
@@ -426,6 +465,11 @@ html {
 .dropdown-items__btn:focus {
   outline: none;
 }
+@media (max-width: 1200px) {
+  .dropdown-items__btn {
+    margin-right: 30px;
+  }
+}
 .dropdown-items__list {
   display: none;
   position: absolute;
@@ -435,7 +479,7 @@ html {
   background: #ffffff;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  min-width: 197px;
+  min-width: 220px;
   z-index: 5;
 }
 .dropdown-items__item {
@@ -465,7 +509,7 @@ html {
     position: fixed;
     top: -100%;
     left: 0;
-    width: 320px;
+    width: 100%;
     height: 80%;
     background: rgba(0, 0, 0, 0.8);
     padding: 150px 30px 30px 40px;
@@ -530,18 +574,21 @@ html {
   .menu__icon._active span {
     transform: scale(0) translate(0px, -50%);
     background-color: #303030;
+    background-color: #f0f0f0;
   }
   .menu__icon._active::before {
     top: 50%;
     transform: rotate(45deg) translate(0px, -50%);
     transition: all 0.3s ease 0s;
     background-color: #303030;
+    background-color: #f0f0f0;
   }
   .menu__icon._active::after {
     top: 50%;
     transform: rotate(-45deg) translate(0px, -50%);
     transition: all 0.3s ease 0s;
     background-color: #303030;
+    background-color: #f0f0f0;
   }
 }
 
