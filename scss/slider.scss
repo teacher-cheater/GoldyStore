@@ -63,6 +63,9 @@
     &:hover {
       background: $hoverBtn;
     }
+    &:active {
+      background: $colorActive;
+    }
   }
 
   // .slider__block-right
@@ -89,7 +92,6 @@
       background: url("../img/icons/btn-next-active.svg") 0 0 / contain
         no-repeat;
     }
-    //z-index: 3;
   }
 
   // .slider__btn-next

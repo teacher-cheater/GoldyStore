@@ -93,10 +93,14 @@
     background: $backgroundColor;
     padding: 25px 50px;
     align-items: center;
+    @media (max-width: 1230px) {
+      gap: 8px;
+      padding: 18px 35px;
+      flex-direction: row-reverse;
+    }
   }
 
   // .header__navigation
-
   &__navigation {
   }
 
@@ -120,6 +124,9 @@
       left: -24px;
       position: absolute;
       background: $colorHoverDark;
+      @media (max-width: 1230px) {
+        width: 0;
+      }
     }
   }
 
@@ -208,6 +215,9 @@
   & ul {
     display: flex;
     gap: 60px;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+    }
   }
   // .nav__list
 
@@ -225,6 +235,11 @@
     transition: all 0.3s ease-in 0s;
     &:hover {
       color: $colorLate;
+    }
+    @media (max-width: 1200px) {
+      font-size: 18px;
+      color: $colorHoverDark;
+      z-index: 10;
     }
   }
 }
