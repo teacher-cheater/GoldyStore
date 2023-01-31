@@ -54,12 +54,16 @@
       }
     }
     &:focus {
-      outline: 2px solid $colorActive;
-      border-radius: 3px;
+      //outline: 2px solid $colorActive;
+      //border-radius: 3px;
       //background-color: $mainColor;
     }
     @media (max-width: 1200px) {
       margin-right: 30px;
+    }
+    @media (max-width: 539.98px) {
+      margin-right: 0px;
+      display: block;
     }
   }
 
@@ -74,7 +78,7 @@
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     min-width: 220px;
-    z-index: 5;
+    z-index: 15;
   }
 
   // .dropdown-items__item

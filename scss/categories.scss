@@ -1,0 +1,46 @@
+.categories {
+  // .categories__title
+  &__title {
+  }
+
+  // .categories__items
+  &__items {
+    display: flex;
+    gap: 20px;
+    //margin: 0 -10px;
+    flex-wrap: wrap;
+  }
+
+  // .categories__item
+  &__item {
+    //padding: 0 10px;
+    flex: 1 1 15%;
+    min-width: 180px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: $backgroundColor;
+  }
+
+  // .categories__content
+  &__content {
+    padding: 60px 36px 25px 36px;
+  }
+
+  // .categories__picture
+  &__picture {
+    margin-bottom: 30px;
+  }
+
+  // .categories__text
+  &__text {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: $mainColor;
+    //padding: 25px;
+  }
+}

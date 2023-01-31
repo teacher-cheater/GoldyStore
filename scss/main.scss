@@ -1,0 +1,13 @@
+.titles {
+  font-family: "Prata";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  color: $mainColor;
+  margin-bottom: 40px;
+  @media (max-width: 767.98px) {
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 20px;
+  }
+}
