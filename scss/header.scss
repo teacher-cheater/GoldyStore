@@ -69,6 +69,9 @@
 
   &__enter {
     position: relative;
+    @media (max-width: 1200px) {
+      display: none;
+    }
     &:not(:last-child)::after {
       content: "";
       width: 1px;
@@ -77,9 +80,6 @@
       position: absolute;
       top: 2px;
       right: -10px;
-      @media (max-width: 1200px) {
-        height: 0;
-      }
     }
     a {
       color: $mainColor;
@@ -155,7 +155,6 @@
 .enter a,
 .reg a {
   transition: all 0.3s ease-in 0s;
-
   &:hover {
     color: $colorLate;
   }
@@ -229,16 +228,14 @@
 }
 
 .nav {
-  & ul {
+  // .nav__list
+
+  &__list {
     display: flex;
     gap: 60px;
     @media (max-width: 1200px) {
       flex-direction: column;
     }
-  }
-  // .nav__list
-
-  &__list {
   }
 
   // .nav__link
@@ -258,5 +255,44 @@
       color: $colorHoverDark;
       z-index: 10;
     }
+  }
+
+  &__list-mobile {
+    display: none;
+    @media (max-width: 1200px) {
+      border-top: 2px solid $colorHoverDark;
+      padding-top: 45px;
+      display: flex;
+      flex-direction: column;
+      gap: 45px;
+    }
+  }
+  &__link-mobile a {
+    @media (max-width: 1200px) {
+      font-size: 28px;
+      color: $colorHoverDark;
+      display: block;
+    }
+  }
+  &__link-mobile-phone {
+    @media (max-width: 1200px) {
+      display: flex;
+      color: $backgroundColor;
+    }
+  }
+}
+.enter-mobile a,
+.reg-mobile a {
+  @media (max-width: 1200px) {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    text-transform: capitalize;
+  }
+}
+.enter-mobile a {
+  @media (max-width: 1200px) {
+    color: $colorHoverDark;
   }
 }
