@@ -74,6 +74,19 @@ html {
 .header__logo {
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .header__title {
+    display: none;
+  }
+}
+.header__title-mobile {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .header__title-mobile {
+    display: block;
+  }
+}
 .header__subtitle {
   font-weight: 300;
   font-size: 14px;
@@ -81,6 +94,11 @@ html {
   letter-spacing: 0.27em;
   color: #909090;
   text-align: center;
+}
+@media (max-width: 1200px) {
+  .header__subtitle {
+    display: none;
+  }
 }
 .header__block-registration ul {
   display: flex;
@@ -464,6 +482,7 @@ html {
   font-size: 14px;
   line-height: 100%;
   position: relative;
+  z-index: 15;
 }
 .dropdown-items__btn {
   color: #303030;
@@ -505,7 +524,8 @@ html {
   background: url("../img/icons/geo-late.svg") 0 0/contain no-repeat;
 }
 .dropdown-items__btn:focus {
-  outline: none;
+  outline: 2px solid #000;
+  border-radius: 3px;
 }
 @media (max-width: 1200px) {
   .dropdown-items__btn {

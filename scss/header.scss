@@ -20,6 +20,9 @@
     gap: 20px;
     justify-content: space-between;
     align-items: flex-end;
+    @media (max-width: 1200px) {
+      //flex-wrap: wrap-reverse;
+    }
   }
 
   // .header__data
@@ -39,8 +42,19 @@
 
   // .header__title
   &__title {
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
-
+  &__title-mobile {
+    display: none;
+    @media (max-width: 1200px) {
+      display: block;
+      //align-items: flex-end;
+      //align-self: flex-end;
+      //justify-content: flex-end;
+    }
+  }
   // .header__subtitle
   &__subtitle {
     font-weight: 300;
@@ -49,6 +63,9 @@
     letter-spacing: 0.27em;
     color: $colorLate;
     text-align: center;
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 
   // .header__block-registration
