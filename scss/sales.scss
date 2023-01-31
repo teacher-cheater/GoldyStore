@@ -57,6 +57,7 @@
 
   // .sales__item
   &__item {
+    display: flex;
     flex: 0 1 23%;
     min-width: 300px;
     height: 100%;
@@ -110,14 +111,56 @@
 
   // .item__label-sale
   &__label-sale {
+    display: inline-block;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    color: $standart;
+    background-color: $colorSale;
+    border-radius: 15px;
+    padding: 4px 8px;
+    position: absolute;
+    top: -380px;
+    left: 0px;
+    z-index: 105;
   }
 
   // .item__label-like
-  &__label-like {
+  &__label-like a {
+    display: inline-block;
+    background: url("../img/other-icon/heart-l.svg") 0 0 / contain no-repeat;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: -380px;
+    right: 0px;
+    z-index: 155;
+    cursor: pointer;
+    transition: all 0.3s ease-in 0s;
+    &:hover {
+      background: url("../img/other-icon/heart-d.svg") 0 0 / contain no-repeat;
+    }
+    &:active {
+      background: url("../img/other-icon/heart-f.svg") 0 0 / contain no-repeat;
+    }
   }
 
   // .item__label-show
   &__label-show {
+    display: inline-block;
+    background: url("../img/other-icon/eye.svg") 0 0 / contain no-repeat;
+    width: 20px;
+    height: 18px;
+    position: absolute;
+    top: -348px;
+    right: -1px;
+    z-index: 155;
+    cursor: pointer;
+    transition: all 0.3s ease-in 0s;
+    &:hover {
+      background: url("../img/other-icon/eyes.svg") 0 0 / contain no-repeat;
+    }
   }
 
   // .item__price
@@ -143,6 +186,7 @@
     line-height: 160%;
     color: $mainColor;
   }
+
   &__procents {
     display: inline-block;
     font-family: "Inter";
@@ -154,7 +198,7 @@
     border-radius: 15px;
     padding: 4px 8px;
     position: absolute;
-    top: 13px;
+    top: -2.5px;
     right: 8px;
   }
 }
