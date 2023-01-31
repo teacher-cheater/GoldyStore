@@ -1,0 +1,173 @@
+.swiper-pagination-bullet {
+  border: 1px solid $colorActive;
+  padding: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  background: $colorActive;
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+  &:hover {
+    background: $colorActive;
+  }
+}
+
+.sales {
+  // .sales__container
+  &__container {
+  }
+
+  // .sales__title
+  &__title {
+  }
+
+  // .sales__sort
+  &__sort {
+    display: flex;
+    gap: 8px;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    margin-bottom: 36px;
+  }
+
+  // .sales__link
+  &__link {
+    padding: 13px 30px;
+    border-radius: 21px;
+    background: $colorHoverDark;
+    & a {
+      color: $mainColor;
+    }
+  }
+
+  // .sales__content
+  &__content {
+  }
+
+  // .sales__items
+  &__items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  // .sales__item
+  &__item {
+    flex: 0 1 23%;
+    min-width: 300px;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid $backgroundColor;
+    padding: 16px 24px 26px;
+  }
+}
+.link-active {
+  background: $mainColor;
+  & a {
+    color: $standart;
+  }
+}
+.item {
+  // .item__card
+  &__card {
+    display: flex;
+    flex-direction: column;
+    text-align: center !important;
+  }
+
+  // .item__picture
+  &__picture {
+    margin-bottom: 10px;
+    width: 200px !important;
+    height: 370px !important;
+  }
+
+  // .item__img
+  &__img {
+    //width: 200px !important;
+    //height: 200px !important;
+    //object-fit: contain !important;
+  }
+
+  // .item__data
+  &__data {
+    text-align: left;
+    position: relative;
+    &::after {
+      content: "";
+    }
+  }
+
+  // .item__block
+  &__block {
+    display: flex;
+  }
+
+  // .item__label-sale
+  &__label-sale {
+  }
+
+  // .item__label-like
+  &__label-like {
+  }
+
+  // .item__label-show
+  &__label-show {
+  }
+
+  // .item__price
+  &__price {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: $mainColor;
+    & span {
+      text-decoration-line: line-through;
+      color: $colorLate;
+      font-size: 14px;
+    }
+    margin-bottom: 16px;
+  }
+
+  // .item__text
+  &__text {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    color: $mainColor;
+  }
+  &__procents {
+    display: inline-block;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    color: $standart;
+    background-color: $colorProcents;
+    border-radius: 15px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 13px;
+    right: 8px;
+  }
+}
+
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-pagination {
+}
+
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: 150px;
+}
