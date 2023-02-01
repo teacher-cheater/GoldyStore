@@ -7,6 +7,9 @@
   // .product-day__title-block
 
   &__title-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
   }
 
   // .product-day__title
@@ -25,8 +28,10 @@
   }
 
   // .product-day__block
-
   &__block {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
   }
 
   // .product-day__left
@@ -50,62 +55,92 @@
   }
 
   // .product-day__right
-
   &__right {
   }
 }
-.titles {
-}
-.btn-slide-prev {
-}
-.btn-slide-next {
-}
+
 .label-day {
   // .label-day__new
 
   &__new {
+    display: inline-block;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    color: $standart;
+    text-transform: capitalize;
+    padding: 4px 11px;
+    border-radius: 15px;
   }
 }
 .new-lbl {
+  background: $hoverBtn;
 }
 .hit-lbl {
+  background: $colorProcentsLite;
 }
 .sale-lbl {
+  background: $colorSale;
 }
 .right-items {
   // .right-items__stars
-
   &__stars {
   }
 
   // .right-items__title
-
   &__title {
+    font-family: "Prata";
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    color: $mainColor;
+    margin-bottom: 20px;
   }
 
   // .right-items__article
-
   &__article {
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: $backgroundColor;
+    margin-bottom: 2px;
   }
 
   // .right-items__content
-
   &__content {
   }
 
   // .right-items__prices
-
   &__prices {
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+    border-bottom: 1px solid $colorLate;
+    margin-bottom: 30px;
   }
 
   // .right-items__price
-
   &__price {
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 100%;
+    color: $mainColor;
+    & span {
+      text-decoration-line: line-through;
+      color: $colorLate;
+    }
   }
 
   // .right-items__times
 
   &__times {
+    background: $underCover;
+    padding: 12px 14px;
+    margin-bottom: 20px;
   }
 
   // .right-items__colors
@@ -125,28 +160,54 @@
 }
 .colors {
   // .colors__text
-
   &__text {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: $mainColor;
+    margin-bottom: 16px;
   }
 
+  &__items-circle {
+    display: flex;
+    gap: 8px;
+  }
   // .colors__item-1
-
   &__item-1 {
+    width: 24px;
+    height: 24px;
+    background: $circleClrFrst;
+    border-radius: 50%;
   }
 
   // .colors__item-2
 
   &__item-2 {
+    width: 24px;
+    height: 24px;
+    background: $circleClrFrst;
+    border-radius: 50%;
   }
 
   // .colors__item-3
 
   &__item-3 {
+    width: 24px;
+    height: 24px;
+    background: $circleClrFrst;
+    border-radius: 50%;
   }
 
   // .colors__item-4
 
   &__item-4 {
+    width: 24px;
+    height: 24px;
+    background: $circleClrFrst;
+    border-radius: 50%;
   }
 }
 .sizes {
