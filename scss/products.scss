@@ -1,0 +1,251 @@
+.product-day {
+  // .product-day__container
+
+  &__container {
+  }
+
+  // .product-day__title-block
+
+  &__title-block {
+  }
+
+  // .product-day__title
+
+  &__title {
+  }
+
+  // .product-day__arrow
+
+  &__arrow {
+  }
+
+  // .product-day__btn
+
+  &__btn {
+  }
+
+  // .product-day__block
+
+  &__block {
+  }
+
+  // .product-day__left
+
+  &__left {
+  }
+
+  // .product-day__label
+
+  &__label {
+  }
+
+  // .product-day__picture
+
+  &__picture {
+  }
+
+  // .product-day__btn-arrow
+
+  &__btn-arrow {
+  }
+
+  // .product-day__right
+
+  &__right {
+  }
+}
+.titles {
+}
+.btn-slide-prev {
+}
+.btn-slide-next {
+}
+.label-day {
+  // .label-day__new
+
+  &__new {
+  }
+}
+.new-lbl {
+}
+.hit-lbl {
+}
+.sale-lbl {
+}
+.right-items {
+  // .right-items__stars
+
+  &__stars {
+  }
+
+  // .right-items__title
+
+  &__title {
+  }
+
+  // .right-items__article
+
+  &__article {
+  }
+
+  // .right-items__content
+
+  &__content {
+  }
+
+  // .right-items__prices
+
+  &__prices {
+  }
+
+  // .right-items__price
+
+  &__price {
+  }
+
+  // .right-items__times
+
+  &__times {
+  }
+
+  // .right-items__colors
+
+  &__colors {
+  }
+
+  // .right-items__sizes
+
+  &__sizes {
+  }
+
+  // .right-items__buttons
+
+  &__buttons {
+  }
+}
+.colors {
+  // .colors__text
+
+  &__text {
+  }
+
+  // .colors__item-1
+
+  &__item-1 {
+  }
+
+  // .colors__item-2
+
+  &__item-2 {
+  }
+
+  // .colors__item-3
+
+  &__item-3 {
+  }
+
+  // .colors__item-4
+
+  &__item-4 {
+  }
+}
+.sizes {
+  // .sizes__text
+
+  &__text {
+  }
+
+  // .sizes__list
+
+  &__list {
+  }
+
+  // .sizes__choice
+
+  &__choice {
+  }
+}
+.btn-block {
+  // .btn-block__buttons
+
+  &__buttons {
+  }
+
+  // .btn-block__cart
+
+  &__cart {
+  }
+
+  // .btn-block__pay
+
+  &__pay {
+  }
+
+  // .btn-block__data
+
+  &__data {
+  }
+
+  // .btn-block__liked
+
+  &__liked {
+    display: inline-block;
+    background: url("../img/other-icon/heart-l.svg") 0 0 / contain no-repeat;
+    width: 20px;
+    height: 18px;
+    //position: absolute;
+    //top: 0px;
+    //right: -7px;
+    z-index: 155;
+    cursor: pointer;
+    transition: all 0.3s ease-in 0s;
+    &:hover {
+      background: url("../img/other-icon/heart-d.svg") 0 0 / contain no-repeat;
+    }
+    &:active {
+      background: url("../img/other-icon/heart-f.svg") 0 0 / contain no-repeat;
+    }
+  }
+
+  // .btn-block__compare
+
+  &__compare {
+    display: inline-block;
+    background: url("../img/other-icon/compare.svg") 0 0 / contain no-repeat;
+    width: 20px;
+    height: 18px;
+    //position: absolute;
+    //top: 0px;
+    //right: -7px;
+    z-index: 155;
+    cursor: pointer;
+    transition: all 0.3s ease-in 0s;
+    &:hover {
+      background: url("../img/icons/chart.svg") 0 0 / contain no-repeat;
+    }
+    &:active {
+      background: url("../img/icons/chart.svg") 0 0 / contain no-repeat;
+    }
+  }
+
+  // .btn-block__share
+
+  &__share {
+    display: inline-block;
+    background: url("../img/other-icon/share-one.svg") 0 0 / contain no-repeat;
+    width: 20px;
+    height: 18px;
+    //position: absolute;
+    //top: 0px;
+    //right: -7px;
+    z-index: 155;
+    cursor: pointer;
+    transition: all 0.3s ease-in 0s;
+    &:hover {
+      background: url("../img/other-icon/share-one.svg") 0 0 / contain no-repeat;
+    }
+    &:active {
+      background: url("../img/other-icon/share-one.svg") 0 0 / contain no-repeat;
+    }
+  }
+}
