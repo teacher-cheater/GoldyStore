@@ -1080,10 +1080,37 @@ html {
   background: #e1a661;
 }
 
+.product-day__container {
+  position: relative;
+}
 .product-day__title-block {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+}
+.product-day__btn-prev {
+  top: 0;
+  right: 72px;
+}
+@media (max-width: 1200px) {
+  .product-day__btn-prev {
+    top: 10px;
+    right: 68px;
+  }
+}
+.product-day__btn-next {
+  top: 29px;
+  right: 12px;
+}
+@media (max-width: 1200px) {
+  .product-day__btn-next {
+    top: 33px;
+  }
+}
+@media (max-width: 767.98px) {
+  .product-day__btn-next {
+    top: 27px;
+  }
 }
 .product-day__block {
   display: flex;
@@ -1156,7 +1183,6 @@ html {
 }
 .colors__text {
   font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 100%;
@@ -1167,32 +1193,114 @@ html {
 .colors__items-circle {
   display: flex;
   gap: 8px;
+  margin-bottom: 30px;
 }
 .colors__item-1 {
-  width: 24px;
-  height: 24px;
   background: #d9d9d9;
-  border-radius: 50%;
 }
 .colors__item-2 {
-  width: 24px;
-  height: 24px;
-  background: #d9d9d9;
-  border-radius: 50%;
+  background: #f1cb7e;
 }
 .colors__item-3 {
-  width: 24px;
-  height: 24px;
-  background: #d9d9d9;
-  border-radius: 50%;
+  background: #ea8c48;
 }
 .colors__item-4 {
+  background: #a7e492;
+}
+.colors__item-1, .colors__item-2, .colors__item-3, .colors__item-4 {
   width: 24px;
   height: 24px;
-  background: #d9d9d9;
   border-radius: 50%;
+  position: relative;
+}
+.colors__item-1::before, .colors__item-2::before, .colors__item-3::before, .colors__item-4::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #d9d9d9;
 }
 
+.sizes__text {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #303030;
+  margin-bottom: 16px;
+}
+.sizes__list {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+.sizes__choice {
+  padding: 9px 11px;
+  border: 1px solid #909090;
+  color: #303030;
+  transition: all 0.3s ease-in 0s;
+  cursor: pointer;
+  min-width: 50px;
+  text-align: center;
+}
+.sizes__choice:hover {
+  border: 1px solid #303030;
+}
+.sizes__choice:active {
+  color: #ffffff;
+  background: #303030;
+}
+
+.btn-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.btn-block__buttons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.btn-block__cart {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #303030;
+  padding: 21px 150px;
+  cursor: pointer;
+  max-width: 400px;
+  transition: all 0.3s ease-in 0s;
+  margin-bottom: 10px;
+}
+.btn-block__pay {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  flex-wrap: nowrap;
+  line-height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #303030;
+  background: #ffffff;
+  padding: 20px 56px;
+  justify-content: center;
+  border: 1px solid #303030;
+  cursor: pointer;
+  max-width: 400px;
+  transition: all 0.3s ease-in 0s;
+}
+.btn-block__data {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
 .btn-block__liked {
   display: inline-block;
   background: url("../img/other-icon/heart-l.svg") 0 0/contain no-repeat;
