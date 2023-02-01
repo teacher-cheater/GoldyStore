@@ -124,16 +124,6 @@
   &__btn-prev {
     top: 42.5%;
     left: 24px;
-    background: url("../img/icons/btn-next.svg") 0 0 / contain no-repeat;
-    transform: rotate(180deg);
-    &:hover {
-      background: url("../img/icons/btn-next-hover.svg") 0 0 / contain no-repeat;
-    }
-    &:active {
-      background: url("../img/icons/btn-next-active.svg") 0 0 / contain
-        no-repeat;
-    }
-
     @media (max-width: 539.98px) {
       left: 10px;
     }
@@ -143,34 +133,8 @@
   &__btn-next {
     top: 50%;
     right: 24px;
-    transform: translateY(-50%);
-    background: url("../img/icons/btn-next.svg") 0 0 / contain no-repeat;
-    &:hover {
-      background: url("../img/icons/btn-next-hover.svg") 0 0 / contain no-repeat;
-    }
-    &:active {
-      background: url("../img/icons/btn-next-active.svg") 0 0 / contain
-        no-repeat;
-    }
     @media (max-width: 539.98px) {
       right: 10px;
-    }
-  }
-  &__btn-prev,
-  &__btn-next {
-    content: "";
-    position: absolute;
-    cursor: pointer;
-    transition: all 0.3s ease-in 0s;
-    width: 54px;
-    height: 54px;
-    @media (max-width: 1023.98px) {
-      width: 44px;
-      height: 44px;
-    }
-    @media (max-width: 767.98px) {
-      width: 34px;
-      height: 34px;
     }
   }
 }
@@ -199,5 +163,44 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+.btn-slide-prev {
+  background: url("../img/icons/btn-next.svg") 0 0 / contain no-repeat;
+  transform: rotate(180deg);
+  &:hover {
+    background: url("../img/icons/btn-next-hover.svg") 0 0 / contain no-repeat;
+  }
+  &:active {
+    background: url("../img/icons/btn-next-active.svg") 0 0 / contain no-repeat;
+  }
+}
+.btn-slide-next {
+  transform: translateY(-50%);
+  background: url("../img/icons/btn-next.svg") 0 0 / contain no-repeat;
+  &:hover {
+    background: url("../img/icons/btn-next-hover.svg") 0 0 / contain no-repeat;
+  }
+  &:active {
+    background: url("../img/icons/btn-next-active.svg") 0 0 / contain no-repeat;
+  }
+}
+
+.btn-slide-prev,
+.btn-slide-next {
+  content: "";
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.3s ease-in 0s;
+  width: 54px;
+  height: 54px;
+  @media (max-width: 1023.98px) {
+    width: 44px;
+    height: 44px;
+  }
+  @media (max-width: 767.98px) {
+    width: 34px;
+    height: 34px;
   }
 }

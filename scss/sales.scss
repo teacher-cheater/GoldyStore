@@ -16,6 +16,7 @@
 .sales {
   // .sales__container
   &__container {
+    position: relative;
   }
 
   // .sales__title
@@ -41,6 +42,25 @@
     & a {
       color: $mainColor;
     }
+  }
+  &__buttons-slider {
+    position: relative;
+  }
+  &__btn-prev {
+    top: -79px;
+    right: 80px;
+    @media (max-width: 1023.98px) {
+      top: -76px;
+      right: 73px;
+    }
+    @media (max-width: 767.98px) {
+      top: -72px;
+      right: 65px;
+    }
+  }
+  &__btn-next {
+    top: -53px;
+    right: 20px;
   }
 
   // .sales__content
