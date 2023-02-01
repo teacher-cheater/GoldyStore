@@ -1114,8 +1114,37 @@ html {
 }
 .product-day__block {
   display: flex;
-  gap: 100px;
+  gap: 30px;
   justify-content: space-between;
+}
+@media (max-width: 1230px) {
+  .product-day__block {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.product-day__left {
+  position: relative;
+}
+.product-day__arrow-prev {
+  content: "";
+  background: url("../img/other-icon/btn-prev.svg") 0 0/contain no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -16px;
+}
+.product-day__arrow-next {
+  content: "";
+  background: url("../img/other-icon/btn-next.svg") 0 0/contain no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -16px;
 }
 .label-day__new {
   display: inline-block;
@@ -1150,6 +1179,13 @@ html {
   color: #303030;
   margin-bottom: 20px;
 }
+@media (max-width: 767.98px) {
+  .right-items__title {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 26px;
+  }
+}
 .right-items__article {
   font-family: "Inter";
   font-weight: 400;
@@ -1164,6 +1200,12 @@ html {
   gap: 36px;
   border-bottom: 1px solid #909090;
   margin-bottom: 30px;
+  position: relative;
+}
+@media (max-width: 767.98px) {
+  .right-items__prices {
+    flex-wrap: wrap;
+  }
 }
 .right-items__price {
   font-family: "Inter";
@@ -1175,6 +1217,20 @@ html {
 .right-items__price span {
   text-decoration-line: line-through;
   color: #909090;
+}
+.right-items__procents {
+  display: inline-block;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 100%;
+  color: #ffffff;
+  background-color: #e24b33;
+  border-radius: 15px;
+  padding: 4px 8px;
+  position: absolute;
+  top: 0px;
+  left: 220px;
 }
 .right-items__times {
   background: #f5f5f5;
@@ -1236,6 +1292,11 @@ html {
   gap: 8px;
   margin-bottom: 40px;
 }
+@media (max-width: 767.98px) {
+  .sizes__list {
+    flex-wrap: wrap;
+  }
+}
 .sizes__choice {
   padding: 9px 11px;
   border: 1px solid #909090;
@@ -1258,6 +1319,11 @@ html {
   justify-content: space-between;
   gap: 10px;
 }
+@media (max-width: 767.98px) {
+  .btn-block {
+    flex-wrap: wrap;
+  }
+}
 .btn-block__buttons {
   display: flex;
   flex-direction: column;
@@ -1275,8 +1341,21 @@ html {
   padding: 21px 150px;
   cursor: pointer;
   max-width: 400px;
+  width: 100%;
   transition: all 0.3s ease-in 0s;
   margin-bottom: 10px;
+}
+.btn-block__cart:hover {
+  background: #505050;
+  color: #ffffff;
+}
+.btn-block__cart:active {
+  background: #000;
+}
+@media (max-width: 767.98px) {
+  .btn-block__cart {
+    padding: 21px 100px;
+  }
 }
 .btn-block__pay {
   font-family: "Inter";
@@ -1296,6 +1375,13 @@ html {
   max-width: 400px;
   transition: all 0.3s ease-in 0s;
 }
+.btn-block__pay:hover {
+  background: #303030;
+  color: #ffffff;
+}
+.btn-block__pay:active {
+  background: #000;
+}
 .btn-block__data {
   display: flex;
   flex-direction: column;
@@ -1304,10 +1390,8 @@ html {
 .btn-block__liked {
   display: inline-block;
   background: url("../img/other-icon/heart-l.svg") 0 0/contain no-repeat;
-  width: 20px;
-  height: 18px;
-  z-index: 155;
   cursor: pointer;
+  padding-left: 25px;
   transition: all 0.3s ease-in 0s;
 }
 .btn-block__liked:hover {
@@ -1319,9 +1403,7 @@ html {
 .btn-block__compare {
   display: inline-block;
   background: url("../img/other-icon/compare.svg") 0 0/contain no-repeat;
-  width: 20px;
-  height: 18px;
-  z-index: 155;
+  padding-left: 25px;
   cursor: pointer;
   transition: all 0.3s ease-in 0s;
 }
@@ -1334,9 +1416,7 @@ html {
 .btn-block__share {
   display: inline-block;
   background: url("../img/other-icon/share-one.svg") 0 0/contain no-repeat;
-  width: 20px;
-  height: 18px;
-  z-index: 155;
+  padding-left: 25px;
   cursor: pointer;
   transition: all 0.3s ease-in 0s;
 }

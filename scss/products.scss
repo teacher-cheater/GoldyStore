@@ -14,12 +14,10 @@
   }
 
   // .product-day__title
-
   &__title {
   }
 
   // .product-day__arrow
-
   &__arrow {
   }
 
@@ -32,6 +30,7 @@
       right: 68px;
     }
   }
+
   &__btn-next {
     top: 29px;
     right: 12px;
@@ -46,30 +45,51 @@
   // .product-day__block
   &__block {
     display: flex;
-    gap: 100px;
+    gap: 30px;
     justify-content: space-between;
+    @media (max-width: 1230px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   // .product-day__left
-
   &__left {
+    position: relative;
   }
 
   // .product-day__label
-
   &__label {
   }
 
   // .product-day__picture
-
   &__picture {
   }
 
   // .product-day__btn-arrow
-
   &__btn-arrow {
   }
 
+  &__arrow-prev {
+    content: "";
+    background: url("../img/other-icon/btn-prev.svg") 0 0 / contain no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -16px;
+  }
+  &__arrow-next {
+    content: "";
+    background: url("../img/other-icon/btn-next.svg") 0 0 / contain no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -16px;
+  }
   // .product-day__right
   &__right {
   }
@@ -91,15 +111,19 @@
     border-radius: 15px;
   }
 }
+
 .new-lbl {
   background: $hoverBtn;
 }
+
 .hit-lbl {
   background: $colorProcentsLite;
 }
+
 .sale-lbl {
   background: $colorSale;
 }
+
 .right-items {
   // .right-items__stars
   &__stars {
@@ -113,6 +137,11 @@
     line-height: 100%;
     color: $mainColor;
     margin-bottom: 20px;
+    @media (max-width: 767.98px) {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 26px;
+    }
   }
 
   // .right-items__article
@@ -136,6 +165,10 @@
     gap: 36px;
     border-bottom: 1px solid $colorLate;
     margin-bottom: 30px;
+    position: relative;
+    @media (max-width: 767.98px) {
+      flex-wrap: wrap;
+    }
   }
 
   // .right-items__price
@@ -151,8 +184,22 @@
     }
   }
 
-  // .right-items__times
+  &__procents {
+    display: inline-block;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    color: $standart;
+    background-color: $colorProcents;
+    border-radius: 15px;
+    padding: 4px 8px;
+    position: absolute;
+    top: 0px;
+    left: 220px;
+  }
 
+  // .right-items__times
   &__times {
     background: $underCover;
     padding: 12px 14px;
@@ -160,12 +207,10 @@
   }
 
   // .right-items__colors
-
   &__colors {
   }
 
   // .right-items__sizes
-
   &__sizes {
   }
 
@@ -252,6 +297,9 @@
     display: flex;
     gap: 8px;
     margin-bottom: 40px;
+    @media (max-width: 767.98px) {
+      flex-wrap: wrap;
+    }
   }
 
   // .sizes__choice
@@ -273,10 +321,14 @@
     }
   }
 }
+
 .btn-block {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  @media (max-width: 767.98px) {
+    flex-wrap: wrap;
+  }
   // .btn-block__buttons
 
   &__buttons {
@@ -299,12 +351,22 @@
     padding: 21px 150px;
     cursor: pointer;
     max-width: 400px;
+    width: 100%;
     transition: all 0.3s ease-in 0s;
     margin-bottom: 10px;
+    &:hover {
+      background: $hoverBtn;
+      color: $standart;
+    }
+    &:active {
+      background: $colorActive;
+    }
+    @media (max-width: 767.98px) {
+      padding: 21px 100px;
+    }
   }
 
   // .btn-block__pay
-
   &__pay {
     font-family: "Inter";
     font-weight: 500;
@@ -322,10 +384,16 @@
     cursor: pointer;
     max-width: 400px;
     transition: all 0.3s ease-in 0s;
+    &:hover {
+      background: $mainColor;
+      color: $standart;
+    }
+    &:active {
+      background: $colorActive;
+    }
   }
 
   // .btn-block__data
-
   &__data {
     display: flex;
     flex-direction: column;
@@ -333,17 +401,11 @@
   }
 
   // .btn-block__liked
-
   &__liked {
     display: inline-block;
     background: url("../img/other-icon/heart-l.svg") 0 0 / contain no-repeat;
-    width: 20px;
-    height: 18px;
-    //position: absolute;
-    //top: 0px;
-    //right: -7px;
-    z-index: 155;
     cursor: pointer;
+    padding-left: 25px;
     transition: all 0.3s ease-in 0s;
     &:hover {
       background: url("../img/other-icon/heart-d.svg") 0 0 / contain no-repeat;
@@ -354,16 +416,10 @@
   }
 
   // .btn-block__compare
-
   &__compare {
     display: inline-block;
     background: url("../img/other-icon/compare.svg") 0 0 / contain no-repeat;
-    width: 20px;
-    height: 18px;
-    //position: absolute;
-    //top: 0px;
-    //right: -7px;
-    z-index: 155;
+    padding-left: 25px;
     cursor: pointer;
     transition: all 0.3s ease-in 0s;
     &:hover {
@@ -375,16 +431,10 @@
   }
 
   // .btn-block__share
-
   &__share {
     display: inline-block;
     background: url("../img/other-icon/share-one.svg") 0 0 / contain no-repeat;
-    width: 20px;
-    height: 18px;
-    //position: absolute;
-    //top: 0px;
-    //right: -7px;
-    z-index: 155;
+    padding-left: 25px;
     cursor: pointer;
     transition: all 0.3s ease-in 0s;
     &:hover {
