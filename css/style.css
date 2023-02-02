@@ -759,6 +759,7 @@ html {
   transition: all 0.3s ease-in 0s;
   min-width: 180px;
   height: 100%;
+  min-height: 280px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -772,6 +773,7 @@ html {
 }
 .categories__picture {
   margin-bottom: 30px;
+  flex-grow: 1;
 }
 .categories__text {
   font-family: "Inter";
@@ -780,6 +782,7 @@ html {
   line-height: 100%;
   text-align: center;
   color: #303030;
+  align-items: flex-end;
 }
 
 .swiper-pagination-bullet {
@@ -1333,19 +1336,31 @@ html {
 .colors__item-4 {
   background: #a7e492;
 }
+.colors__item-1 {
+  background: url("../img/other-icon/color-1.png") 0 0/contain no-repeat;
+}
+.colors__item-2 {
+  background: url("../img/other-icon/color-2.png") 0 0/contain no-repeat;
+}
+.colors__item-3 {
+  background: url("../img/other-icon/color-3.png") 0 0/contain no-repeat;
+}
+.colors__item-4 {
+  background: url("../img/other-icon/color-4.png") 0 0/contain no-repeat;
+}
 .colors__item-1, .colors__item-2, .colors__item-3, .colors__item-4 {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   position: relative;
 }
-.colors__item-1::before, .colors__item-2::before, .colors__item-3::before, .colors__item-4::before {
-  content: "";
-  position: absolute;
-  width: 32px;
-  height: 32px;
+.colors__item-1:hover, .colors__item-2:hover, .colors__item-3:hover, .colors__item-4:hover {
+  border: 1px solid #303030;
   border-radius: 50%;
-  background: #d9d9d9;
+}
+.colors__item-1:active, .colors__item-2:active, .colors__item-3:active, .colors__item-4:active {
+  border: 1px solid #000;
+  border-radius: 50%;
 }
 
 .sizes__text {

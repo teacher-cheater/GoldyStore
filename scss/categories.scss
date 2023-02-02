@@ -22,10 +22,12 @@
     transition: all 0.3s ease-in 0s;
     min-width: 180px;
     height: 100%;
+    min-height: 280px;
     display: flex;
     flex-direction: column;
     text-align: center;
     background: $backgroundColor;
+
     &:hover {
       img {
         transform: scale(1.2);
@@ -41,6 +43,7 @@
   // .categories__picture
   &__picture {
     margin-bottom: 30px;
+    flex-grow: 1;
   }
 
   // .categories__text
@@ -51,5 +54,6 @@
     line-height: 100%;
     text-align: center;
     color: $mainColor;
+    align-items: flex-end;
   }
 }
