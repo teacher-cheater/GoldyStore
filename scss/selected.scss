@@ -42,9 +42,6 @@
       top: 5px;
       right: -8px;
       position: absolute;
-      @media (max-width: 1200px) {
-        width: 0;
-      }
     }
     &:hover {
       cursor: pointer;

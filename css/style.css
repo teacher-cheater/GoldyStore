@@ -615,11 +615,6 @@ html {
   right: -8px;
   position: absolute;
 }
-@media (max-width: 1200px) {
-  .dropdown-items__btn::after {
-    width: 0;
-  }
-}
 .dropdown-items__btn:hover {
   cursor: pointer;
   transition: all 0.4s ease-in 0s;
