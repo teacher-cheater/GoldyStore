@@ -775,24 +775,29 @@ html {
 }
 .categories__item {
   flex: 1 1 15%;
-  transition: all 0.3s ease-in 0s;
   min-width: 180px;
-  height: 100%;
-  min-height: 280px;
+  min-height: 260px;
   display: flex;
   flex-direction: column;
   text-align: center;
   background: #f8f8f8;
 }
+.categories__item img {
+  transition: all 0.5s ease 0s;
+}
 .categories__item:hover img {
   transform: scale(1.2);
 }
 .categories__content {
-  padding: 60px 36px 25px 36px;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
 }
 .categories__picture {
-  margin-bottom: 30px;
   flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .categories__text {
   font-family: "Inter";

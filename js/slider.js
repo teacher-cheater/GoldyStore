@@ -11,9 +11,6 @@ sliderItems.forEach((slide, index) => {
 
   sliderItems[0].setAttribute('data-active', '');
 
-  slide.addEventListener('click', function () {
-    showNextSlide('next');
-  });
 });
 
 btnNext.onclick = () => {
