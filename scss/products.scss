@@ -320,6 +320,8 @@
   // .sizes__text
 
   &__text {
+    display: flex;
+    gap: 8px;
     font-family: "Inter";
     font-weight: 600;
     font-size: 12px;
@@ -327,6 +329,15 @@
     text-transform: uppercase;
     color: $mainColor;
     margin-bottom: 16px;
+    align-items: center;
+  }
+  &__question {
+    display: flex;
+    padding: 3px 6px;
+    font-weight: 500;
+    border-radius: 50%;
+    background: $circleClrFrst;
+    cursor: pointer;
   }
 
   // .sizes__list
