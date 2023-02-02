@@ -241,7 +241,7 @@ html {
 @media (max-width: 767.98px) {
   .icons {
     position: fixed;
-    bottom: 25px;
+    bottom: 0px;
     z-index: 200;
     background: #d9d9d9;
     padding: 20px;
@@ -411,6 +411,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: url("../img/other-icon/diamond.svg") 0 0/cover no-repeat;
 }
 @media (max-width: 1200px) {
   .slider__block-left {
@@ -1058,6 +1059,9 @@ html {
     min-width: 300px;
   }
 }
+.ornamentals__left {
+  background: url("../img/other-icon/diamond.svg") 0 0/cover no-repeat;
+}
 .ornamentals__subtitle {
   padding: 72px 0 0 26px;
   max-width: 255px;
@@ -1271,8 +1275,13 @@ html {
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  color: #f8f8f8;
+  color: #909090;
   margin-bottom: 2px;
+}
+@media (max-width: 767.98px) {
+  .right-items__article {
+    margin-bottom: 12px;
+  }
 }
 .right-items__prices {
   display: flex;
@@ -1300,6 +1309,7 @@ html {
 .right-items__price span {
   text-decoration-line: line-through;
   color: #909090;
+  margin-left: 10px;
 }
 .right-items__procents {
   display: flex;
@@ -1609,8 +1619,10 @@ html {
   font-family: "Inter";
   font-weight: 500;
   font-size: 16px;
-  line-height: 100%;
+  line-height: 120%;
   color: #303030;
+  max-width: 310px;
+  text-align: center;
 }
 
 body {

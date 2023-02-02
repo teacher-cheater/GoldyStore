@@ -84,7 +84,9 @@
     font-family: "Inter";
     font-weight: 500;
     font-size: 16px;
-    line-height: 100%;
+    line-height: 120%;
     color: $mainColor;
+    max-width: 310px;
+    text-align: center;
   }
 }

@@ -168,8 +168,11 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 100%;
-    color: $backgroundColor;
+    color: $colorLate;
     margin-bottom: 2px;
+    @media (max-width: 767.98px) {
+      margin-bottom: 12px;
+    }
   }
 
   // .right-items__content
@@ -183,7 +186,6 @@
     column-gap: 85px;
     border-bottom: 1px solid $colorLate;
     margin-bottom: 30px;
-    //position: relative;
     @media (max-width: 767.98px) {
       flex-wrap: wrap;
     }
@@ -203,6 +205,7 @@
     & span {
       text-decoration-line: line-through;
       color: $colorLate;
+      margin-left: 10px;
     }
   }
 
@@ -327,7 +330,6 @@
   }
 
   // .sizes__list
-
   &__list {
     display: flex;
     gap: 8px;
@@ -338,7 +340,6 @@
   }
 
   // .sizes__choice
-
   &__choice {
     padding: 9px 11px;
     border: 1px solid $colorLate;

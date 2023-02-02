@@ -42,9 +42,6 @@
 
   // .header__title
   &__title {
-    @media (max-width: 1200px) {
-      //display: none;
-    }
   }
   &__title-mobile {
     display: none;
@@ -212,7 +209,7 @@
 .icons {
   @media (max-width: 767.98px) {
     position: fixed;
-    bottom: 25px;
+    bottom: 0px;
     z-index: 200;
     background: $circleClrFrst;
     padding: 20px;
