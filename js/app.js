@@ -37,3 +37,13 @@ document.querySelectorAll('.dropdown').forEach((dropDownWrapper) => {
     }
   });
 });
+
+const question = document.querySelector('.sizes__question')
+const hidden = document.querySelector('.sizes__visible-text')
+
+question.addEventListener('mouseover', () => {
+  hidden.classList.add('visible')
+})
+question.addEventListener('mouseout', () => {
+  hidden.classList.remove('visible')
+})
