@@ -131,8 +131,10 @@ html {
   text-transform: capitalize;
 }
 .header__icons {
+  width: 96%;
   display: flex;
-  gap: 28px;
+  gap: 8px;
+  justify-content: space-between;
 }
 .header__bottom {
   display: flex;
@@ -240,7 +242,6 @@ html {
   .icons {
     position: fixed;
     bottom: 25px;
-    right: 50px;
     z-index: 200;
     background: #d9d9d9;
     padding: 20px;

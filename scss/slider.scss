@@ -1,13 +1,8 @@
-//.mySlides {
-//  display: none;
-//}
-
 .slider {
   background: $backgroundColor;
   position: relative;
   // .slider__container
   &__container {
-    //position: relative;
     margin-bottom: 120px;
     @media (max-width: 767.98px) {
       margin-bottom: 70px;

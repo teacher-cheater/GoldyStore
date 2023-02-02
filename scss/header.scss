@@ -100,8 +100,10 @@
 
   // .header__icons
   &__icons {
+    width: 96%;
     display: flex;
-    gap: 28px;
+    gap: 8px;
+    justify-content: space-between;
   }
 
   // .header__bottom
@@ -211,7 +213,6 @@
   @media (max-width: 767.98px) {
     position: fixed;
     bottom: 25px;
-    right: 50px;
     z-index: 200;
     background: $circleClrFrst;
     padding: 20px;
