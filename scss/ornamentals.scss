@@ -17,6 +17,7 @@
     justify-content: space-between;
     display: flex;
     background: $backgroundColor;
+    min-height: 315px;
   }
 
   // .ornamentals__left
@@ -28,14 +29,14 @@
 
   &__subtitle {
     padding: 72px 0 0 26px;
-    max-width: 222px;
+    max-width: 255px;
     font-family: "Inter";
     font-weight: 600;
     font-size: 20px;
     line-height: 160%;
     text-transform: uppercase;
     color: $mainColor;
-    margin-bottom: 19px;
+    margin: 0 0px 19px 0;
   }
 
   // .ornamentals__bg-sale
@@ -60,7 +61,7 @@
   // .ornamentals__right-1
 
   &__right-1 {
-    background: url("../img/card/sale/sale1.png") 0 0 / contain no-repeat;
+    background: url("../img/card/sale/sale1.png") -25px 0 / cover no-repeat;
     width: 124px;
     height: 312px;
   }
@@ -72,9 +73,9 @@
 
   // .ornamentals__right-2
   &__right-2 {
-    background: url("../img/card/sale/sale2.png") 0 0 / contain no-repeat;
+    background: url("../img/card/sale/sale2.png") 0 70px / contain no-repeat;
     width: 230px;
-    height: 290px;
+    height: 312px;
   }
 
   // .ornamentals__block-3
@@ -83,9 +84,9 @@
 
   // .ornamentals__right-3
   &__right-3 {
-    background: url("../img/card/sale/sale3.png") 0 35px / contain no-repeat;
+    background: url("../img/card/sale/sale3.png") 0 65px / contain no-repeat;
     width: 220px;
-    height: 266px;
+    height: 312px;
   }
 }
 
