@@ -1,6 +1,9 @@
 .categories {
   &__container {
     margin-bottom: 120px;
+    @media (max-width: 767.98px) {
+      margin-bottom: 70px;
+    }
   }
   // .categories__title
   &__title {

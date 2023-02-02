@@ -20,11 +20,6 @@
     gap: 20px;
     justify-content: space-between;
     align-items: flex-end;
-    @media (max-width: 1200px) {
-      //flex-wrap: wrap-reverse;
-      //flex-wrap: wrap;
-      //flex-direction: row-reverse;
-    }
     @media (max-width: 539.98px) {
       flex-wrap: wrap;
       flex-direction: row-reverse;
