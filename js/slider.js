@@ -1,71 +1,43 @@
+const slider = document.querySelector('#slider');
+const sliderItems = Array.from(slider.children);
+const btnPrev = document.querySelector('.btn-slide-prev')
+const btnNext = document.querySelector('.btn-slide-next')
 
-//const btnPrev = document.querySelector('.slider__btn-prev')
-//const btnNext = document.querySelector('.slider__btn-next')
 
-////btnPrev.addEventListener('click', ()=> plusSlides(-1))
+sliderItems.forEach((slide, index) => {
+  if (index !== 0) slide.classList.add('hidden');
 
+  slide.dataset.index = index;
 
-////let slideIndex = 0;
+  sliderItems[0].setAttribute('data-active', '');
 
-////function showSlides() {
-////  let i;
-////  const slides = document.getElementsByClassName("my-slides");
+  slide.addEventListener('click', function () {
+    showNextSlide('next');
+  });
+});
 
-////  for (i = 0; i < slides.length; i++) {
-////    slides[i].style.display = "none";
-////  }
+btnNext.onclick = () => {
+  showNextSlide('next');
+};
 
-////  slideIndex++;
+btnPrev.onclick = () => {
+  showNextSlide('prev');
+};
 
-////  if (slideIndex > slides.length) {
-////    slideIndex = 1;
-////  }
+function showNextSlide(direction) {
+  const currentSlide = slider.querySelector('[data-active]');
+  const currentSlideIndex = +currentSlide.dataset.index;
+  currentSlide.classList.add('hidden');
+  currentSlide.removeAttribute('data-active');
 
-////  slides[slideIndex - 1].style.display = "flex";
+  let nextSlideIndex;
+  if (direction === 'next') {
+    nextSlideIndex = currentSlideIndex + 1 === sliderItems.length ? 0 : currentSlideIndex + 1;
+  } else if (direction === 'prev') {
+    nextSlideIndex = currentSlideIndex === 0 ? sliderItems.length - 1 : currentSlideIndex - 1;
+  }
 
-////  setTimeout(showSlides, 555000); // Change image every 2 seconds
-////}
-
-////showSlides();
-
-////----slider-swiper
-//new Swiper('.swiper', {
-//  navigation: {
-//    nextEl: "swiper-button-next",
-//    prevEl: "swiper-button-prev",
-//  },
-//  pagination: {
-//    el: '.swiper-pagination',
-//    clickable: true,
-//  },
-//  grabCursor: true,
-//  keyboard: {
-//    enabled: true,
-//    pageUpDown: true,
-//  },
-//  autoHeight: true,
-//  watchOverfloy: true,
-//  autoplay: {
-//    delay: 3000,
-//  },
-//  speed: 600,
-//  effect: 'fade',
-//  breakpoints: {
-//    320: {
-//      slidePerView: 1,
-//    },
-//    480: {
-//      slidePerView: 1,
-//    },
-//    992: {
-//      slidePerView: 1,
-//    },
-//  },
-//  preloadImages: false,
-//  lazy: {
-//    loadOnTransitionStart: false,
-//    loadPrevNext: false,
-//  },
-//  watchSlidesProgress: true,
-//  watchSlidesVisibility: true,
-//})
+  const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
+  nextSlide.classList.remove('hidden');
+  nextSlide.setAttribute('data-active', '');
+}

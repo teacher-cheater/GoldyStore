@@ -1,10 +1,10 @@
-.mySlides {
-  display: none;
-}
+//.mySlides {
+//  display: none;
+//}
 
 .slider {
   background: $backgroundColor;
-  min-width: 0;
+  position: relative;
   // .slider__container
   &__container {
     //position: relative;
@@ -129,38 +129,15 @@
   &__btn-next {
     top: 50%;
     right: 24px;
-    @media (max-width: 539.98px) {
+    @media (max-width: 767.98px) {
       right: 10px;
+      top: 46%;
+    }
+    @media (max-width: 539.98px) {
+      top: 46%;
     }
   }
 }
-
-//.fade {
-//  animation-name: fade;
-//  animation-duration: 1.5s;
-//  // .fade__image
-//  &__image {
-//    vertical-align: middle;
-//  }
-//}
-
-//@-webkit-keyframes fade {
-//  from {
-//    opacity: 0.4;
-//  }
-//  to {
-//    opacity: 1;
-//  }
-//}
-
-//@keyframes fade {
-//  from {
-//    opacity: 0.4;
-//  }
-//  to {
-//    opacity: 1;
-//  }
-//}
 
 .btn-slide-prev {
   background: url("../img/icons/btn-next.svg") 0 0 / contain no-repeat;
@@ -199,4 +176,8 @@
     width: 34px;
     height: 34px;
   }
+}
+
+.hidden {
+  display: none;
 }
