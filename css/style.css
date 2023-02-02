@@ -131,10 +131,14 @@ html {
   text-transform: capitalize;
 }
 .header__icons {
-  width: 96%;
   display: flex;
-  gap: 8px;
-  justify-content: space-between;
+  gap: 32px;
+}
+@media (max-width: 767.98px) {
+  .header__icons {
+    width: 96%;
+    justify-content: space-between;
+  }
 }
 .header__bottom {
   display: flex;
@@ -243,7 +247,7 @@ html {
     position: fixed;
     bottom: 0px;
     z-index: 200;
-    background: #d9d9d9;
+    background: #f8f8f8;
     padding: 20px;
   }
 }

@@ -97,10 +97,12 @@
 
   // .header__icons
   &__icons {
-    width: 96%;
     display: flex;
-    gap: 8px;
-    justify-content: space-between;
+    gap: 32px;
+    @media (max-width: 767.98px) {
+      width: 96%;
+      justify-content: space-between;
+    }
   }
 
   // .header__bottom
@@ -211,7 +213,7 @@
     position: fixed;
     bottom: 0px;
     z-index: 200;
-    background: $circleClrFrst;
+    background: $backgroundColor;
     padding: 20px;
   }
 
